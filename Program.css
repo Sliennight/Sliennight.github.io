@@ -1,7 +1,9 @@
 .container
 {
-	font-family: "微軟正黑體"
+  font-family: "微軟正黑體";
 }
+
+/* top */
 .container .top
 {
   width: 100%;
@@ -12,6 +14,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  cursor: pointer;;
 }
 .container .top .logo
 {
@@ -32,6 +35,10 @@
   margin-bottom:20px;
   font-size: 16pt;
 }
+.container .top .list .btn
+{
+  font-size: 0.875em;
+}
 .btn,.btn_1
 {
   width: 10%;
@@ -48,7 +55,7 @@
   transition-duration: 0.5s;
   border-radius: 8px;
 }
-.btn:hover
+.container .top .list .btn:hover
 {
   background-color: #F6C877;
   color: #875F83;
@@ -57,7 +64,7 @@
 .container .top .list .btn:hover.btn_1 ul
 {
   opacity: 1;
-  height: 158px;
+  height: 250px;
 }
 .container .top .list .btn.btn_1 ul
 {
@@ -75,19 +82,24 @@
 }
 .container .top .list .btn.btn_1 ul li
 {
+  display: inline-block;
   list-style: none;
-	padding: 10px 15px;
+  padding: 10px 15px;
+  color: #875F83;
 }
+
  .container .main
 {
   width: 100%;
   height: 80%;
 }
+
+/* about */
 .container .main .about
 {
   width:100%;
   height: 20%;
-  /* background-color: #F8EC80; */
+  background-color: #F8EC80;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -95,36 +107,94 @@
 }
 .container .main .about .aboutL
 {
-  width: 50%;
-  height: 300px;
-  background-color: #F8EC80;
+  width: 45%;
+  height: 100%;
+  /* background-color: #F8EC80; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  margin: 20px;
 }
 .container .main .about .aboutL h1
 {
   width: 100%;
-  height: 20%;
+  height: 5%;
+  padding-top: 40px;
 }
 .container .main .about .aboutL p
 {
   width: 100%;
-  height: 20%;
-  font-size: 16pt;
+  height: 50%;
+  font-size: 1.875em;
 }
 .container .main .about .aboutR
 {
-  width: 50%;
-  height: 100%;
-}
-.container .main .about .aboutR
-{
-  width: 50%;
+  width: 45%;
   height: 400px;
-  background-image: url(/素材/9-2.jpg);
+  background-image: url(/material/9-2.jpg);
   border-radius: 1px;
-  background-size:contain;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+}
+
+/* intro */
+.container .main .intro
+{
+  width: 100%;
+  height: 10%;
+}
+.container .main .intro h1
+{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.container .main .intro .PIC
+{
+  width: 100%;
+  height: 300px;
+  background-color: #F9DCB6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}  
+.container .main .intro .pic
+{
+  width: 20%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: aqua;
+  background-position: center;
+  background-size: cover;
+}
+.container .main .intro .pic.pic_1
+{
+  background-image: url(material/12.jpg);
+}
+.container .main .intro .pic.pic_2
+{
+  background-image: url(material/6.jpg);
+}
+.container .main .intro .pic.pic_3
+{
+  background-image: url(material/3.jpg);
+}
+.container .main .intro .pic.pic_4
+{
+  background-image: url(material/10.jpg);
+}
+.container .main .intro .pic.pic_5
+{
+  background-image: url(material/4.jpg);
 }
