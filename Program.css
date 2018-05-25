@@ -1,3 +1,7 @@
+body
+{
+  cursor:url(material/foo432.cur),auto;
+}
 .container
 {
   font-family: "微軟正黑體";
@@ -14,7 +18,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  cursor: pointer;;
 }
 .container .top .logo
 {
@@ -92,6 +95,10 @@
 {
   width: 100%;
   height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* about */
@@ -145,6 +152,7 @@
 {
   width: 100%;
   height: 10%;
+  margin-bottom: 20px;
 }
 .container .main .intro h1
 {
@@ -197,4 +205,157 @@
 .container .main .intro .pic.pic_5
 {
   background-image: url(material/4.jpg);
+}
+/* menu */
+.container .main .menu1
+{
+  width: 25%;
+  height: 650px;
+  background-color: #F8EC80;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10px 0 10px;
+  margin-bottom: 20px;
+}
+.container .main .menu2
+{
+  width: 38.88%;
+  height: 450px;
+  background-color: #F8EC80;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10px 0 10px;
+  margin-bottom: 20px;
+}
+.container .main .menu1 h2,.container .main .menu2 h2
+{
+  width: 100%;
+  height: 20%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  color: #79233F;
+}
+.container .main .menu1 .pic2,.container .main .menu2 .pic2
+{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #aaa;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+.container .main .menu1 .pic2.pic2_1
+{
+  background-image: url(material/12-2.png);
+}
+.container .main .menu1 .pic2.pic2_2
+{
+  background-image: url(material/6-2.png);
+}
+.container .main .menu1 .pic2.pic2_3
+{
+  background-image: url(material/3-2.png);
+}
+.container .main .menu2 .pic2.pic2_4
+{
+  background-image: url(material/10-1.png);
+}
+.container .main .menu2 .pic2.pic2_5
+{
+  background-image: url(material/4-1.png);
+}
+.container .main .menu1 .products
+{
+  width: 20%;
+  height: 100px;
+  margin:10px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  font-weight: bold;
+}
+.container .main .menu2 .products
+{
+  width: 20%;
+  height: 100px;
+  margin:25px;
+  z-index: 1;
+  text-align: center;
+}
+.container .main .menu2 .cup
+{
+  width: 5%;
+  height: 60px;
+  padding-top:80px; 
+}
+.container .main .recommen
+{
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .main .recommen .h1
+{
+  width: 100%;
+  height: 20%;
+}
+.container .main .recommen .recommen-article
+{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.container .main .recommen .raL,.container .main .recommen .raR
+{
+  width: 38.88%;
+  height: 500px;
+  margin-right: 20px;
+  background-color: #875F83; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .main .recommen .raL .raL_pic
+{
+  width: 100%;
+  height: 50%;
+  background-image: url(material/11.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.container .main .recommen .raR .raR_pic
+{
+  width: 100%;
+  height: 50%;
+  background-image: url(material/10.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container .main .recommen .raL p2,.container .main .recommen .raR p
+{
+  width: 100%;
+  height: 50%;
 }
